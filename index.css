@@ -1,0 +1,144 @@
+html, body { 
+    --color-1: #aaa8e6;
+    --color-2: #87035F; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #FB952F;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background: #2A8703;
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    background-color: var(--color-2);
+}
+
+#resetBtn {
+    background-color: var(--color-2);
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+
+.flying {
+    display: block;
+    animation: myAnimationLeft 4s infinite;
+    font-size: 90px;
+    width: 200px;
+}
+
+.flyingTwo {
+    display: block;
+    animation: myAnimationright 4s infinite;
+    font-size: 90px;
+    width: 200px;
+}
+
+@keyframes myAnimationLeft {
+    0%{
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+    }
+    25%{
+        position: absolute;
+        left: 25%;
+        bottom: 25%;
+    }
+    75%{
+        position: absolute;
+        left: 50%;
+        bottom: 42%;
+    }
+    100%{
+        position: absolute;
+        left: 75%;
+        bottom: 65%;
+    }
+    
+    75%{
+        position: absolute;
+        left: 90%;
+        bottom: 100%;
+    }
+} 
+
+@keyframes myAnimationright {
+    0%{
+        position: absolute;
+        right: 15%;
+        bottom: 100%;
+    }
+    25%{
+        position: absolute;
+        right: 35%;
+        bottom: 25%;
+    }
+    75%{
+        position: absolute;
+        right: 50%;
+        bottom: 45%;
+    }
+    100%{
+        position: absolute;
+        right: 100%;
+        bottom: 20%;
+    }
+    
+    
+    
+}
