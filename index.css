@@ -38,7 +38,7 @@ body {
     background: #2A8703;
     margin: 0 auto;
     font-size: 80px;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
